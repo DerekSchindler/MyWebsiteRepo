@@ -4,61 +4,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="This is the home page that will include links to sections of other pages, as well as a description of the class that this project is for.">
-  <meta name="keywords" content="Derek, Schindler, Personal Website, Web Design">
+  <meta name="keywords" content="Derek, Schindler, Personal Website, Web Design, Interests, Hobbies, Running, Video Games">
   <meta name="author" content="Derek Schindler">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Webpage</title>
+  <title>Derek Schindler | Interests/Hobbies </title>
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<body>
-  <header>
+<body class="main-grid">
+  <header class="header-grid">
     <nav>
+      <strong id="TopOfPage">Derek Schindler</strong>
       <!--heading for sr only-->
-      <h2 id="TopOfPage">Navigation</h2>
-      <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="About.html">About Me</a></li>
-        <li><a href="#">Interests/Hobbies</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+      <h2 class="screen-reader">Navigation</h2>
+      <ul class="main-nav">
+        <li class="nav-li"><a href="index.html">Home Page</a></li>
+        <li class="nav-li"><a href="About.html">About Me</a></li>
+        <li class="nav-li active"><a href="#">Interests/Hobbies</a></li>
+        <li class="nav-li contact"><a href="Contact.html">Contact</a></li>
       </ul>
     </nav>
-    <img src="https://lh3.googleusercontent.com/ERWi1T4cHkaS5uHKr9yph39balPQ8DxunJpgXqu7P9782g1ZDfYL4PgYSlg4uH8skodCj6w14XOabgWhjPSEOyCrOuztI0JwqNsCBBP9bsSileDPwdn7EFK0nQrXz_WSI9k8g_KN" alt="Picture of an Xbox Controler">
-    <h1><strong>Derek Schindler</strong></h1>
+    <img class="controller" src="Controller.png" alt="Picture of an Xbox Controler">
+
   </header>
-  <main>
-    <h1>My Interests and Hobbies</h1>
-    <section>
-      <img src="https://lh3.googleusercontent.com/5zySkaFCYzCMyUTTliNmoUeGoFcGj7a_6oFOqEi2ZWf7AB2zVmKyfJSdTlwMDzpDma37Eev_XLzcntgkMTSjMALfEsNGcx4AKbG353lg" alt="A variety of games that the author enjoys.">
-      <h2 id="VideoGames">Video Games</h2>
-      <em>“Video Games have the ability to transport us to a world where appearances and race don’t matter, it's what you say and what you do that define who you are.”-Anonymous</em>
+  <main class="interests-grid">
+    <h1 class="interests-heading">My Interests and Hobbies</h1>
+    <section class="text-sections vg-grid-item">
+      <img id="VideoGames" src="VideoGames.jpg" alt="A variety of games that the author enjoys.">
+      <h2 class="text-header">Video Games</h2>
+      <blockquote class="quote">“Video Games have the ability to transport us to a world where appearances and race don’t matter, it's what you say and what you do that define who you are.”-Anonymous</blockquote>
       <p>I spend countless hours playing video games with my friends, and I don’t consider it a waste of time like most people. Video games provide us with a new world to hang out in, and we don’t even have to walk out of our front door. I play
         primarily on Xbox under the ailias TrinalFungus742, but I recently got a Nintedo Switch. The first game I got for it was Legend of Zelda: Breath of the Wild, and it might be my new favorite game. You have an endless amount of things to
         discover, and you can only succeed by learning from your past mistakes. </p>
     </section>
-    <section>
+    <section class="text-sections">
       <figure>
-        <img src="https://lh4.googleusercontent.com/RBPSLfpTkB7uIQPBbSXIzas8bt94_Vup7IgBiAncBJBSBNdnUqqaC0wHwfLB5D8r_-bBhH0owrZrX5H9VFlpO6w5VcA5W1FIlGg4TlxT" alt="The author running in an obstacle course race">
+        <img id="Running" src="SawTooth.jpg" alt="The author running in an obstacle course race">
         <figcaption>The obstacle, "SawTooth", at Savage Race, Ohio</figcaption>
       </figure>
-      <h2 id="Running">Running</h2>
-      <em>“Obesity is one of the only problems that you can actually run from”-Anonymous</em>
-      <p>While it may not seem like it, my friends and I spend time together outside of video games, too. In fact, the majority of us are on the Licking Heights Cross Country team. I’ve also recently introduced them to <abbr
+      <h2 class="text-header">Running</h2>
+      <blockquote class="quote">“Obesity is one of the only problems that you can actually run from”-Anonymous</blockquote>
+      <p>While it may not seem like it, my friends and I spend time together outside of video games, too. In fact, the majority of us are on the Licking Heights Cross Country team. I’ve also recently introduced them to <abbr class="abbr"
           title="Obstacle Course Races">OCRs</abbr> that I’ve been running for a few years and they seem to like it. I’ve ran races like the <cite>Savage Race</cite>, which is 6 miles long and has over 50 obstacles. I’ve also ran shorter, local races
         like the
         Dash for Donation. Running is something that I enjoy doing and it helps me stay in shape, so that’s a win-win for me.</p>
     </section>
   </main>
-  <footer>
-    <a href="#TopOfPage">Go to top of page</a>
+  <footer class="footer-grid">
+    <a href="#TopOfPage">Click to go to top of page</a>
     <address>
-      Written, coded, and designed by Derek Schindler
-      Email me at:
-      TrinalFungus742@gmail.com
-      Add me on:
-      Xbox- TrinalFungus742
-      Instagram- whydoihaveanaccountidontuse
+      <div class="address1">Written, coded, and designed by Derek Schindler</div>
+      <div class="address2">Email me at:</div>
+      <div class="address3">TrinalFungus742@gmail.com</div>
+      <div class="address4">Add me on:</div>
+      <div class="address5">Xbox- TrinalFungus742</div>
+      <div class="address6">Instagram- whydoihaveanaccountidontuse</div>
     </address>
+
   </footer>
 </body>
 

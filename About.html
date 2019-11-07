@@ -4,63 +4,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="This is the home page that will include links to sections of other pages, as well as a description of the class that this project is for.">
-  <meta name="keywords" content="Derek, Schindler, Personal Website, Web Design">
+  <meta name="keywords" content="Derek, Schindler, Personal Website, Web Design, Family, About">
   <meta name="author" content="Derek Schindler">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Webpage</title>
+  <title>Derek Schindler | About Me</title>
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<body>
-  <header>
+<body class="main-grid">
+  <header class="header-grid">
     <nav>
+      <strong id="TopOfPage">Derek Schindler</strong>
       <!--heading for sr only-->
-      <h2 id="TopOfPage">Navigation</h2>
-      <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="Interests.html">Interests/Hobbies</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+      <h2 class="screen-reader">Navigation</h2>
+      <ul class="main-nav">
+        <li class="nav-li"><a href="index.html">Home Page</a></li>
+        <li class="nav-li active"><a href="#">About Me</a></li>
+        <li class="nav-li"><a href="Interests.html">Interests/Hobbies</a></li>
+        <li class="nav-li contact"><a href="Contact.html">Contact</a></li>
       </ul>
     </nav>
-    <img src="https://lh3.googleusercontent.com/ERWi1T4cHkaS5uHKr9yph39balPQ8DxunJpgXqu7P9782g1ZDfYL4PgYSlg4uH8skodCj6w14XOabgWhjPSEOyCrOuztI0JwqNsCBBP9bsSileDPwdn7EFK0nQrXz_WSI9k8g_KN" alt="Picture of an Xbox Controler">
-    <h1><strong>Derek Schindler</strong></h1>
+    <img class="controller" src="Controller.png" alt="Picture of an Xbox Controler">
+
   </header>
-  <main>
-    <h1>About Me</h1>
-    <section>
+  <main class="interests-grid">
+    <h1 class="interests-heading">About Me</h1>
+    <section class="text-sections">
       <figure>
-        <img src="https://lh4.googleusercontent.com/998KKD77-XBxBYfpiLGwsUA5fAHa3Wt1ht5phoaanl60OK2VNkYT3X3moXqYp3XEtsETyMO1EGElqFNc4TCMVc3oe8yGFj_PcuJtMKqV4xpX3Kyk5xzdzRhKU_ttPxcFwiWcXvvk" alt="The author and his dad holding race medals.">
+        <img id="WhoIAm" src="RacePic.jpg" alt="The author and his dad holding race medals.">
         <figcaption>My dad and I holding our Syndicate Medals</figcaption>
       </figure>
-      <h2 id="WhoIAm">Who I Am</h2>
-      <em>“Who are you? And what do you want?” -Iroh, Avatar: The Last Airbender
-      </em>
+      <h2 class="text-header">Who I Am</h2>
+      <blockquote class="quote">“Who are you? And what do you want?” -Iroh, Avatar: The Last Airbender
+      </blockquote>
       As you may have already figured out, my name is Derek Schindler. I was born on August 1, 2003, and I just turned 16. I live with my mom, Amy, my dad, Fred, and my little sister who acts like she’s 17, Ryann. I go to Licking Heights High School
       and I’m currently a sophomore, but I’m taking a few higher level classes. I’m in Honors Pre-Calculus, which is a senior level math class, and I’m taking AP Biology, which contains primarily juniors. I run on the Cross Country team, and while
       I’m nowhere near the best, it’s still enjoyable and one of my favorite sports that I’ve done throughout the years. Some of my favorite TV shows include Gravity Falls, The Amazing World of Gumball, and The Office, which is sadly being taken off
       of Netflix very soon.
     </section>
-    <section>
-      <img src="https://lh3.googleusercontent.com/HdUy7ob1QE6DescVOEvZcj1MksnEoU1eoVLrC7ged-gM4pxjTDjHnKO62e0OpnXrMxiKWL4u3wQrNiCOYa-2pHWMLUbj2PybUsvbv6WLMHsztS8Z9YEJyLwOWn4wz5tcokZIgvOt" alt="A picture of the author's family">
-      <h2 id="Famliy">My Family</h2>
-      <em>“People say I’m crazy. If they met the rest of my family they would understand why.”-Anonymous</em>
+    <section class="text-sections">
+      <img id="Famliy" src="Family.jpg" alt="A picture of the author's family">
+      <h2 class="text-header">My Family</h2>
+      <blockquote class="quote">“People say I’m crazy. If they met the rest of my family they would understand why.”-Anonymous</blockquote>
       <p>I live with my mom, my dad, and my little sister, and we have two cats and a bearded dragon. My grandparents on both sides of the family are from all over Europe, including (but not limited to) Germany, Austria, France, England, and possibly
         Ireland. Every December, my dad’s uncle throws a Christmas party where most, if not all of our extended family is invited. So, I know my dad’s cousins and aunts and uncles much better than my mom’s, whom I’ve never met, yet my mom will claim
         I have. As of right now, my mom's uncle recently passed away, and while I barely knew him, it's unsettling to see the rest of my family so upset.
       </p>
     </section>
   </main>
-  <footer>
-    <a href="#TopOfPage">Go to top of page</a>
+  <footer class="footer-grid">
+    <a href="#TopOfPage">Click to go to top of page</a>
     <address>
-      Written, coded, and designed by Derek Schindler
-      Email me at:
-      TrinalFungus742@gmail.com
-      Add me on:
-      Xbox- TrinalFungus742
-      Instagram- whydoihaveanaccountidontuse
+      <div class="address1">Written, coded, and designed by Derek Schindler</div>
+      <div class="address2">Email me at:</div>
+      <div class="address3">TrinalFungus742@gmail.com</div>
+      <div class="address4">Add me on:</div>
+      <div class="address5">Xbox- TrinalFungus742</div>
+      <div class="address6">Instagram- whydoihaveanaccountidontuse</div>
     </address>
+
   </footer>
 </body>
 

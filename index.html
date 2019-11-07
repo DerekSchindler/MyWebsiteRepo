@@ -4,61 +4,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="This is the home page that will include links to sections of other pages, as well as a description of the class that this project is for.">
-  <meta name="keywords" content="Derek, Schindler, Personal Website, Web Design">
+  <meta name="keywords" content="Derek, Schindler, Personal Website, Web Design, Ernest Cline">
   <meta name="author" content="Derek Schindler">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Webpage</title>
+  <title>Derek Schindler | Home</title>
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<body>
-  <header>
+<body class="main-grid">
+  <header class="header-grid">
+    <strong id="TopOfPage">Derek Schindler</strong>
     <nav>
       <!--heading for sr only-->
-      <h2 id="TopOfPage">Navigation</h2>
-      <ul>
-        <li><a href="#">Home Page</a></li>
-        <li><a href="About.html">About Me</a></li>
-        <li><a href="Interests.html">Interests/Hobbies</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+      <h2 class="screen-reader">Navigation</h2>
+      <ul class="main-nav">
+        <li class="nav-li active"><a href="#">Home Page</a></li>
+        <li class="nav-li"><a href="About.html">About Me</a></li>
+        <li class="nav-li"><a href="Interests.html">Interests/Hobbies</a></li>
+        <li class="nav-li contact"><a href="Contact.html">Contact</a></li>
       </ul>
     </nav>
-    <img src="https://lh3.googleusercontent.com/ERWi1T4cHkaS5uHKr9yph39balPQ8DxunJpgXqu7P9782g1ZDfYL4PgYSlg4uH8skodCj6w14XOabgWhjPSEOyCrOuztI0JwqNsCBBP9bsSileDPwdn7EFK0nQrXz_WSI9k8g_KN" alt="Picture of an Xbox Controler">
-    <h1><strong>Derek Schindler</strong></h1>
+    <img class="controller" src="Controller.png" alt="Picture of an Xbox Controler">
   </header>
   <main>
-    <em>“Being human totally sucks most of the time. Video Games are the only things that make life bearable.” - Ernest Cline</em>
-    <section>
-      <h2>What is This?</h2>
-      <p>This is a personal website that I have created for a Web Design Class. We go through each step to creating a good website, and this is the final product. This is a personal website, filled with content about who I am and what I like to do.
+    <blockquote class="quote">“Being human totally sucks most of the time. Video Games are the only things that make life bearable.” - Ernest Cline</blockquote>
+    <section class="text-sections">
+      <h2 class="text-header">What is This?</h2>
+      <p>This is a personal website that I have created for a Web Design Class. We go through each step to creating a good website, and this is the final product. This is filled with content about who I am and what I like to do.
       </p>
     </section>
-    <section>
+    <aside>
       <!---heading for sr only-->
-      <h2>Secondary Navigation</h2>
+      <h2 class="screen-reader">Secondary Navigation</h2>
       <nav>
-        <ul>
-          <li> <a href="About.html#WhoIAm">Who I Am</a><img src="https://lh4.googleusercontent.com/TUn07cFDC90Ii_vWn9bZwdHVwajk5jAeFrgxOTgkP0Dx20YrZPSWSxMR-VnD6fj0EvQlp28B39yEP__1eY7Qvi24apgoRaG4-EZrHJzfWe9I8x90dBd6KGK0RBS2zDRek7el-D-w"
-              alt="Picture of the author and his dad holding race medals"> </li>
-          <li> <a href="About.html#Family">My Family</a><img src="https://lh3.googleusercontent.com/HdUy7ob1QE6DescVOEvZcj1MksnEoU1eoVLrC7ged-gM4pxjTDjHnKO62e0OpnXrMxiKWL4u3wQrNiCOYa-2pHWMLUbj2PybUsvbv6WLMHsztS8Z9YEJyLwOWn4wz5tcokZIgvOt"
-              alt="Picture of the suthor's family."> </li>
-          <li> <a href="Interests.html#VideoGames">Video Games</a> <img src="https://lh3.googleusercontent.com/5zySkaFCYzCMyUTTliNmoUeGoFcGj7a_6oFOqEi2ZWf7AB2zVmKyfJSdTlwMDzpDma37Eev_XLzcntgkMTSjMALfEsNGcx4AKbG353lg"
-              alt="Video Games that the author enjoys playing."> </li>
-          <li> <a href="Interests.html#Running">Running</a> <img src="https://lh5.googleusercontent.com/t99Mxs_i7-on7BfBAr6bpbNvg7ZBNr4aQbW3t7SJIQGHbY68TFk364-xeuv2Q3SfoToCYOPdIrXl8hHfSvO82ItkdP0CNjE-Fo1ge4FhAaz7AOzemecGEHeSsQMyXnip0I4XaruX"
-              alt="Runners lined up at the starting line"> </li>
+        <ul class="sec-nav">
+          <li class="sec-nav-li"> <a href="About.html#WhoIAm">Who I Am</a><img class="nav-img race-pic" src="RacePic.jpg" alt="The author and his dad holding syndicate medals"></li>
+          <li class="sec-nav-li"> <a href="About.html#Family">My Family</a><img class="nav-img" src="Family.jpg" alt="Picture of the suthor's family."> </li>
+          <li class="sec-nav-li"> <a href="Interests.html#VideoGames">Video Games</a> <img class="nav-img" src="VideoGames.jpg" alt="Video Games that the author enjoys playing."> </li>
+          <li class="sec-nav-li"> <a href="Interests.html#Running">Running</a> <img class="nav-img" src="XCLineUp.jpg" alt="Runners lined up at the starting line"> </li>
         </ul>
       </nav>
-    </section>
+    </aside>
   </main>
-  <footer>
-    <a href="#TopOfPage">Go to top of page</a>
+  <footer class="footer-grid">
+    <a href="#TopOfPage">Click to go to top of page</a>
     <address>
-      Written, coded, and designed by Derek Schindler
-      Email me at:
-      TrinalFungus742@gmail.com
-      Add me on:
-      Xbox- TrinalFungus742
-      Instagram- whydoihaveanaccountidontuse
+      <div class="address1">Written, coded, and designed by Derek Schindler</div>
+      <div class="address2">Email me at:</div>
+      <div class="address3">TrinalFungus742@gmail.com</div>
+      <div class="address4">Add me on:</div>
+      <div class="address5">Xbox- TrinalFungus742</div>
+      <div class="address6">Instagram- whydoihaveanaccountidontuse</div>
     </address>
 
   </footer>
