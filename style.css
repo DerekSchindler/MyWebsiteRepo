@@ -145,6 +145,10 @@ figure img {
   clip: rect(0px, 128px, 0px, 128px);
 }
 
+.img-border {
+  border: 8px solid var(--backgroundGrey);
+}
+
 /*text areas*/
 .text-sections {
   display: flex;
