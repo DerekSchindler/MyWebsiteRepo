@@ -7,6 +7,10 @@
   --backgroundGrey: #4D4D4D;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
 }
@@ -15,6 +19,35 @@ address {
   color: white;
   background-color: var(--backgroundGrey);
   font-style: normal;
+}
+
+/*skip nav link*/
+.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+.skip-main:focus, a.skip-main:active {
+  color: black;
+  background-color: var(--backgroundOrange);
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid black;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 999;
+  text-decoration: none;
 }
 
 /*grids*/
@@ -129,8 +162,8 @@ figure img {
   background-color: var(--backgroundOrange);
   color: black;
   font-family: 'Orbitron', cursive;
-  font-weight: bold;
   text-align: center;
+  font-weight: bold;
 }
 
 .abbr {
@@ -181,10 +214,13 @@ footer a {
   text-decoration: none;
   padding: 14px 16px;
   text-align: center;
+  font-size: 20px;
 }
 
 footer a:hover {
   background: var(--backgroundOrange);
+  color: black;
+  font-weight: bold;
 }
 
 footer address {
@@ -225,8 +261,7 @@ footer address {
 }
 
 .active a {
-  text-decoration: line-through;
-  text-decoration-style: solid;
+  text-shadow: 12px 10px 2px #000000;
 }
 
 .contact {
@@ -236,12 +271,11 @@ footer address {
 /*secondary navigation on home screen*/
 .sec-nav {
   list-style-type: none;
-  margin: 10px;
   padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width:1355px) {
@@ -257,7 +291,7 @@ footer address {
 }
 
 .sec-nav-li {
-  width: 20%;
+  width: 25%;
   height: auto;
   color: black;
   padding: 14px 16px;
@@ -294,73 +328,22 @@ footer address {
   color: black;
 }
 
-/*contact form */
-form {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto auto;
+/*contact layout*/
+#contact {
   margin: 10px;
-}
-
-.form1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.form2 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.form3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.form4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  margin-right: 20px;
-}
-
-.form5 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  margin-left: 100px;
   display: block;
-  width: 150px;
-  height: 50px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form5:hover {
-  background: var(--backgroundOrange);
-  color: black;
-}
-
-form {
-  margin: 0;
-  padding: 0;
   background-color: var(--backgroundOrange);
-  border-radius: 10%;
-}
-
-form>div {
-  margin-left: 80px;
+  border-style: solid;
+  border-radius: 5%;
 }
 
 label {
@@ -372,10 +355,11 @@ label {
   display: block;
   text-align: left;
   background-color: var(--backgroundOrange);
+  width: 20%;
 }
 
 input {
-  color: black;
+  color: white;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -389,7 +373,7 @@ input {
 }
 
 textarea {
-  color: black;
+  color: white;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -400,18 +384,17 @@ textarea {
   border-color: var(--backgroundGrey);
   margin-left: 20px;
   margin-bottom: 20px;
+  width: 75%;
 }
 
 ::placeholder {
   font-family: 'Bitter', serif;
-  color: black;
+  color: white;
 }
 
-.conatct {
-  margin: 20px;
-}
-
-hr {
+input:hover {
+  background-color: var(--backgroundOrange);
   color: black;
-  background-color: black;
+  font-weight: bold;
+  border: 4px solid black;
 }

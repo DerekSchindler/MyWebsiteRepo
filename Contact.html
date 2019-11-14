@@ -12,11 +12,12 @@
 </head>
 
 <body class="main-grid">
+  <a class="skip-main" href="#contact">Skip to main content</a>
   <header class="header-grid">
     <strong id="TopOfPage">Derek Schindler</strong>
     <nav>
       <!--heading for sr only-->
-      <h2>Navigation</h2>
+      <h2 class="screen-reader">Navigation</h2>
       <ul class="main-nav">
         <li class="nav-li"><a href="index.html">Home Page</a></li>
         <li class="nav-li"><a href="About.html">About Me</a></li>
@@ -24,35 +25,35 @@
         <li class="nav-li active contact"><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <img class="controller" src="Controller.png" alt="Picture of an Xbox Controler">
+    <img class="controller" src="Controller.png" alt="">
 
   </header>
-  <main class="contact">
-    <section>
+  <main id="contact">
+    <section class="contact-grid">
       <h1>Contact</h1>
       <form action="mailto:TrinalFungus742@gmail.com" method="post">
 
-        <div class="form1"><label for="fname">First Name</label>
+        <div><label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your first name..."></div>
-        <div class="form2"><label for="lname">Last Name</label>
+        <div><label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..."></div>
-        <div class="form3"><label for="country">Country</label>
+        <div><label for="country">Country</label>
           <input type="text" id="country" name="country" placeholder="The country you live in..."></div>
-        <div class="form4"><label for="subject">Subject</label>
+        <div><label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something..." rows="8" cols="80"></textarea></div>
-        <input class="form5" type="submit" name="Submit" value="Submit">
+        <input type="submit" name="Submit" value="Submit">
       </form>
     </section>
   </main>
   <footer class="footer-grid">
     <a href="#TopOfPage">Click to go to top of page</a>
     <address>
-      <div class="address1">Written, coded, and designed by Derek Schindler</div>
-      <div class="address2">Email me at:</div>
-      <div class="address3">TrinalFungus742@gmail.com</div>
-      <div class="address4">Add me on:</div>
-      <div class="address5">Xbox- TrinalFungus742</div>
-      <div class="address6">Instagram- whydoihaveanaccountidontuse</div>
+      <div>Written, coded, and designed by Derek Schindler</div>
+      <div>Email me at:</div>
+      <div>TrinalFungus742@gmail.com</div>
+      <div>Add me on:</div>
+      <div>Xbox- TrinalFungus742</div>
+      <div>Instagram- whydoihaveanaccountidontuse</div>
     </address>
 
   </footer>
