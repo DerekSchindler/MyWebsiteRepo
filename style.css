@@ -130,9 +130,17 @@ img {
 figure img {
   width: 100%;
   height: auto;
+}
+
+figure {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+figure>figcaption {
+  color: white;
 }
 
 .controller {
@@ -329,6 +337,10 @@ footer address {
 
 .sec-nav-li:hover {
   background-color: var(--backgroundOrange);
+  color: black;
+}
+
+.sec-nav-li a:hover {
   color: black;
 }
 
