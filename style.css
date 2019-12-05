@@ -15,12 +15,6 @@ body {
   background-color: black;
 }
 
-address {
-  color: white;
-  background-color: var(--backgroundGrey);
-  font-style: normal;
-}
-
 /*skip nav link*/
 .skip-main {
   left: -999px;
@@ -176,6 +170,7 @@ figure>figcaption {
   font-family: 'Orbitron', cursive;
   text-align: center;
   font-weight: bold;
+  padding: 5px;
 }
 
 .abbr {
@@ -246,6 +241,12 @@ footer address {
   align-items: center;
 }
 
+address {
+  color: white;
+  background-color: var(--backgroundGrey);
+  font-style: normal;
+}
+
 /*main navigation*/
 .main-nav {
   list-style-type: none;
@@ -253,10 +254,7 @@ footer address {
   padding: 0;
   background-color: var(--backgroundGrey);
   overflow: hidden;
-}
-
-.nav-li {
-  float: left;
+  display: flex;
 }
 
 .nav-li a {
@@ -276,10 +274,6 @@ footer address {
   text-shadow: 12px 10px 2px #000000;
 }
 
-.contact {
-  float: right;
-}
-
 /*secondary navigation on home screen*/
 .sec-nav {
   list-style-type: none;
@@ -290,7 +284,7 @@ footer address {
   justify-content: space-around;
 }
 
-@media only screen and (max-width:1355px) {
+@media only screen and (max-width:1550px) {
   .sec-nav {
     list-style-type: none;
     margin: 10px;
@@ -344,6 +338,10 @@ footer address {
   color: black;
 }
 
+.sec-nav-li img:hover {
+  border-color: var(--backgroundOrange);
+}
+
 /*contact layout*/
 #contact {
   margin: 10px;
@@ -353,64 +351,37 @@ footer address {
 .contact-grid {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto;
+  grid-auto-rows: auto auto;
+  margin: 0;
+  grid-gap: 0px;
 }
 
-form {
-  background-color: var(--backgroundOrange);
-  border-style: solid;
-  border-radius: 5%;
+#contactheader {
+  font-size: 35px;
+  padding: 5px;
+  margin: 15px;
 }
 
-label {
-  color: black;
-  margin: 20px;
-  text-decoration: none;
-  font-family: 'Bitter', serif;
-  font-size: 20px;
-  display: block;
-  text-align: left;
-  background-color: var(--backgroundOrange);
-  width: 20%;
-}
-
-input {
-  color: white;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  background-color: var(--backgroundGrey);
-  font-family: 'Bitter', serif;
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--backgroundGrey);
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-textarea {
-  color: white;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  background-color: var(--backgroundGrey);
-  font-family: 'Bitter', serif;
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--backgroundGrey);
-  margin-left: 20px;
-  margin-bottom: 20px;
-  width: 75%;
-}
-
-::placeholder {
-  font-family: 'Bitter', serif;
-  color: white;
-}
-
-input:hover {
+.main-contact {
   background-color: var(--backgroundOrange);
   color: black;
+  font-family: 'Bitter', serif;
   font-weight: bold;
-  border: 4px solid black;
+  padding: 15px;
+  margin: 15px;
+  border-style: solid;
+  border-radius: 20%;
+}
+
+/* phone layout*/
+@media only screen and (max-width: 800px) {
+  .main-nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .nav-li a {
+    padding: 10px 15px 10px
+  }
 }
